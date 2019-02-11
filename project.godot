@@ -1,0 +1,37 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[  ]
+_global_script_class_icons={
+
+}
+
+[application]
+
+config/name="Sliding"
+run/main_scene="res://scenes/Level1.tscn"
+config/icon="res://icon.png"
+
+[autoload]
+
+Loader="*res://scripts/Loader.gd"
+
+[display]
+
+window/size/width=320
+window/size/height=576
+window/size/test_width=320
+window/size/test_height=576
+
+[rendering]
+
+quality/driver/driver_name="GLES2"
+environment/default_clear_color=Color( 1, 1, 1, 1 )
+environment/default_environment="res://default_env.tres"
