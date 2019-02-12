@@ -11,6 +11,7 @@ const SPEED = 50
 
 var moving = false
 onready var tween = $MoveTween
+onready var anim = $AnimationPlayer
 
 func _ready():
 	get_tree().get_current_scene().connect("move_end", self, "_on_move_end")
@@ -40,5 +41,6 @@ func _input(event):
 		
 func _on_move_end() :
 	moving = false
+	anim.play("bloup")
 	pass
 	
